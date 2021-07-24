@@ -1,0 +1,96 @@
+.container{
+    max-width: 120rem;
+    background-color: var(--color-grey-light-1);
+    margin: 8rem auto;
+    box-shadow: var(--shadow-dark);
+    min-height: 50rem;
+   
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    @media only screen and (max-width:$bp-smallest) {
+        width: 100%;
+    }
+}
+.header{
+    height: 7rem;
+    background-color: #fff;
+    border-bottom:var(--line);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+       @media only screen and (max-width:$bp-smallest) {
+          flex-wrap: wrap;
+          height: 12rem;
+          padding-bottom: 1rem;
+         
+    }
+}
+.content{
+    display: flex;
+
+    @media only screen and (max-width:$bp-medium) {
+        flex-direction: column;
+    }
+ 
+}
+.sideber{
+    flex: 0 0 18%;
+    background-color: var(--color-grey-dark-1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.overview{
+    background-color: #fff;
+}
+.hotel-view{
+    flex:1;
+}
+.detail{
+   display: flex;
+   padding: 4rem;
+   background-color: var(--color-grey-light-1);
+   border-bottom:var(--line);
+
+   @media only screen and (max-width:$bp-medium) {
+    padding: 3rem;
+   }  
+   @media only screen and (max-width:$bp-small) {
+    flex-direction: column;
+   }  
+
+}
+.discription{
+   font-size: 1.4rem;
+   background-color: #fff;
+   flex: 0 0 60%;
+   margin-right: 4rem;
+   padding: 3rem;
+   box-shadow:  var(--shadow-light);
+   border-radius: 3px;
+
+   @media only screen and (max-width:$bp-medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+   }
+
+   @media only screen and (max-width:$bp-small) {
+    margin-right: 0; 
+    margin-bottom: 3rem; 
+   } 
+}
+.user-rivews{
+    background-color: var(--color-grey-light-1);
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
